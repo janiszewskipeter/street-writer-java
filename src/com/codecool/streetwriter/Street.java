@@ -12,11 +12,9 @@ public class Street {
     public Street(String name) {
         this.name = name;
     }
-
     public void build(House house) {
         houses.add(house);
     }
-
     public boolean rename(String newName) {
         if(isStringOnlyLetters(newName)) {
             name = newName;
@@ -24,9 +22,12 @@ public class Street {
         }
         return false;
     }
-
     private boolean isStringOnlyLetters(String str) {
-        // TODO
+        for (int i= 0; i < str.length(); i++){
+            if (!Character.isLetter((str.charAt(i)))){
+                return false;
+            }
+        }
         return true;
     }
 }
