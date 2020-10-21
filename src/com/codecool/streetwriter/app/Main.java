@@ -28,7 +28,7 @@ public class Main {
         richieRich.buy(kossuth14);// Object richieRich has bought a hause on kosstuh 14
         Person residentEvil = new Person("Resident Evil");// Object residentEvil creation
         kossuth14.moveIn(residentEvil);//Object residenEvil has moved in
-
+        // done
         System.out.println("Check object relationships here! :)");
     }
 }
